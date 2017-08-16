@@ -37,8 +37,8 @@ public class MainActivity extends  SlidingFragmentActivity {
         FragmentManager fm = getSupportFragmentManager();//新建了一个fragmentmanager管理器
         FragmentTransaction transaction = fm.beginTransaction();// 开始事务
         Log.i(TAG, "initFragment: 即将替换左边的");
-        transaction.replace(R.id.fl_left_menu, new LeftMenuFragment(),
-                TAG_LEFT_MENU);// 用fragment替换帧布局;参1:帧布局容器的id;参2:是要替换的fragment;参3:标记
+//        transaction.replace(R.id.fl_left_menu, new LeftMenuFragment(),
+//                TAG_LEFT_MENU);// 用fragment替换帧布局;参1:帧布局容器的id;参2:是要替换的fragment;参3:标记
         Log.i(TAG, "initFragment: 吧左边的替换完成");
         transaction.replace(R.id.fl_main, new ContentFragment(), TAG_CONTENT);
         Log.i(TAG, "initFragment: 右边的替换完成");

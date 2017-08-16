@@ -2,6 +2,7 @@ package com.beiyouwuyanzu.moxingbeijing.fragment;
 
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
@@ -29,6 +30,8 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import java.util.ArrayList;
 
+import static android.content.ContentValues.TAG;
+
 /**
  * 主页面fragment
  * 
@@ -44,6 +47,7 @@ public class ContentFragment extends BaseFragment {
 
 	@Override
 	public View initView() {
+		Log.i(TAG, "initView: z准备初始化view");
 		View view = View.inflate(mActivity, R.layout.fragment_content, null);
 		mViewPager = (NoScrollViewPager) view.findViewById(R.id.vp_content);
 		rgGroup = (RadioGroup) view.findViewById(R.id.rg_group);
